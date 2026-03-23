@@ -787,16 +787,6 @@
                 <!-- details [ar-node] -->
                 <NODE tx="-39.1" ty="24.5" tz="2.7" rx="-45" view="sorting_g1bg4Details_i" collapse="" show="">
                   <!-- MenuName [ar-text] -->
-                  <NODE tx="-20" tz="40" rx="90" sxyz="2" view="sorting_g1bg4Details_i" collapse="" show="">
-                    <TEXT rgba="#FFFFFFFF" label="G1BG4" width="100" backrgba="#0091DCFF">
-                      <METADATA fallback="en">
-                        <label>
-                          <en><![CDATA[G1BG4]]></en>
-                          <xde><![CDATA[label]]></xde>
-                        </label>
-                      </METADATA>
-                    </TEXT>
-                  </NODE>
                   <!-- datasheet [ar-link-2d] -->
                   <NODE view="sorting_g1bg4Details_i" collapse="" show="">
                     <NODE sx="30" sy="1" sz="30" view="sorting_g1bg4Details_i" collapse="" show="">
