@@ -776,16 +776,6 @@
                   <LINK w="30" h="30" d="30" refer="@view:sorting_g1bg4Details_i" rgb="FFFFFF"/>
                 </NODE>
                 <!--  [ar-text] -->
-                <NODE tx="-12" ty="15.4" tz="-7.1" rx="90" view="sorting_b1bg1Details_i,sorting_b1bg2Details_i,sorting_b1bg3Details_i,sorting_v1kf1Details_i,sorting_mz1bg1Details_i,sorting_by1Details_i,sorting_inputs,sorting_g1bg1Details_i,sorting_g1bg2Details_i,sorting_g1bg3Details_i" collapse="" show="">
-                  <TEXT rgba="#000000FF" label="G1BG4" width="100" backrgba="#FFFFFFFF">
-                    <METADATA fallback="en">
-                      <label>
-                        <en><![CDATA[G1BG4]]></en>
-                        <xde><![CDATA[label]]></xde>
-                      </label>
-                    </METADATA>
-                  </TEXT>
-                </NODE>
                 <!-- wireframe [ar-model] -->
                 <NODE sx="30" sy="30" sz="30" view="sorting_b1bg1Details_i,sorting_b1bg2Details_i,sorting_b1bg3Details_i,sorting_v1kf1Details_i,sorting_mz1bg1Details_i,sorting_by1Details_i,sorting_inputs,sorting_g1bg1Details_i,sorting_g1bg2Details_i,sorting_g1bg3Details_i" collapse="" show="">
                   <MODEL file="cube" texture="https://festodidacticsw.azurewebsites.net/ar/MPS400/images/grid.png" tint="#B6BEC6">
