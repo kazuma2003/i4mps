@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Visualisation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="AR_Schema.xsd">
+    
+    <Communication>
+        <MqttBroker id="my_broker">
+            <Host>192.168.0.100</Host> <Port>1883</Port>
+        </MqttBroker>
+    </Communication>
+
+    <Variables>
+        <Variable id="var_temp" type="float">
+            <MqttSource brokerId="my_broker">
+                <Topic>factory/sensor/temp</Topic>
+            </MqttSource>
+        </Variable>
+        
+        <Variable id="var_pressure" type="float">
+            <MqttSource brokerId="my_broker">
+                <Topic>factory/sensor/pressure</Topic>
+            </MqttSource>
+        </Variable>
+    </Variables>
+
+    <Scene>
+        <Target id="marker_1">
+            <Text id="txt_temp" x="0.1" y="0.2" z="0" fontSize="24" color="00FF00">
+                <TextFormat>Temperature: {0:F1} °C</TextFormat>
+                <Binding variableId="var_temp" />
+            </Text>
+
+            <Text id="txt_pressure" x="0.1" y="0.1" z="0" fontSize="24" color="00FFFF">
+                <TextFormat>Pressure: {0:F2} bar</TextFormat>
+                <Binding variableId="var_pressure" />
+            </Text>
+        </Target>
+    </Scene>
+    
+</Visualisation>
