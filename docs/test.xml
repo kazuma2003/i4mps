@@ -1,11 +1,11 @@
 <AUGMENTATION viewdisplay="false" viewswitch="true" version="550">
     <VALUESERVER>
-        <MQTT url="mqtt://public:public@public.cloud.shiftr.io" topic="festo/ar" prefix="val_" transmitter="send_data" />
+        <MQTT url="mqtt://public:public@public.cloud.shiftr.io" topic="festo/" />
     </VALUESERVER>
 
     <CAMERA x="0.5" y="0.5" distance="0.5">
         <NODE tx="0" ty="0" tz="0" sxyz="0.02">
-            <TEXT label="@anim:send_data" rgba="000000FF" width="0" backrgba="FFFFFF88" />
+            <TEXT label="@anim:ar" rgba="000000FF" width="0" backrgba="FFFFFF88" />
         </NODE>
     </CAMERA>
 </AUGMENTATION>
