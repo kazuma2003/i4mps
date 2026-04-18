@@ -1,15 +1,12 @@
-<AUGMENTATION viewdisplay="false" viewlist="sorting_home,sorting_IO,sorting_info,sorting_comm1,sorting_comm2,sorting_comm3,sorting_comm4,sorting_comm5,sorting_inputs,sorting_outputs,sorting_modules,sorting_convDetails_m,sorting_iotDetails_m,sorting_idDetails_m,sorting_g1bg1Details_i,sorting_g1bg2Details_i,sorting_g1bg3Details_i,sorting_g1bg4Details_i,sorting_b1bg1Details_i,sorting_b1bg2Details_i,sorting_b1bg3Details_i,sorting_v1kf1Details_i,sorting_mz1bg1Details_i,sorting_by1Details_i,sorting_convDetails_o,sorting_separator1Details_o,sorting_separator2Details_o,sorting_mz1mb1Details_o,sorting_live,live0,live1,live2,live3,live4,live5,live6,live7,live8,live9,live10,live11,live12,live13,live14,live15" viewswitch="true" version="550">
-  <!-- ================================================================== -->
-  <VALUESERVER predefined="{&quot;sorting_db_HMI_Con_xHMIkey&quot;:true,&quot;sorting_db_HMI_Con_xHMIstartLED&quot;:true,&quot;sorting_db_HMI_Con_xHMIstartLED_Not&quot;:true,&quot;sorting_db_HMI_Con_xHMIresetLED_Not&quot;:true,&quot;sorting_indLightYe_Not&quot;:true,&quot;sorting_connected_belt_Not&quot;:true,&quot;sorting_connected_camera_Not&quot;:true}">
-    <MQTT url="mqtt://public:public@public.cloud.shiftr.io" topic="mps/error" prefix="errors_" transmitter=""/>
-  </VALUESERVER>
-  <VALUESERVER predefined="{&quot;sorting_db_HMI_Con_xHMIkey&quot;:true,&quot;sorting_db_HMI_Con_xHMIstartLED&quot;:true,&quot;sorting_db_HMI_Con_xHMIstartLED_Not&quot;:true,&quot;sorting_db_HMI_Con_xHMIresetLED_Not&quot;:true,&quot;sorting_indLightYe_Not&quot;:true,&quot;sorting_connected_belt_Not&quot;:true,&quot;sorting_connected_camera_Not&quot;:true}">
-    <MQTT url="mqtt://public:public@public.cloud.shiftr.io" topic="mps/sorting" prefix="sorting_" transmitter="send_sorting"/>
-  </VALUESERVER>
-  <CAMERA x="0.5" y="0.5" distance="0.2">
-    <NODE tx="0" ty="0" sxyz="1.5">
-      <TEXT label="@anim:status" rgba="000000FF" width="60" backrgba="FFFFFFFF">
-      </TEXT>
-    </NODE>
-  </CAMERA>
+<AUGMENTATION viewdisplay="false" viewlist="sorting_home,sorting_IO,sorting_info,sorting_live,live0" viewswitch="true" version="550">
+    <VALUESERVER predefined="{&quot;sorting_db_HMI_Con_xHMIkey&quot;:true}">
+        <MQTT url="mqtt://public:public@public.cloud.shiftr.io" topic="mps/error" prefix="errors_" />
+        <MQTT url="mqtt://public:public@public.cloud.shiftr.io" topic="mps/sorting" prefix="sorting_" transmitter="send_sorting"/>
+    </VALUESERVER>
+
+    <CAMERA x="0.5" y="0.5" distance="0.2">
+        <NODE tx="0" ty="0" sxyz="1.5">
+            <TEXT label="@anim:status" rgba="000000FF" width="60" backrgba="FFFFFFFF" />
+        </NODE>
+    </CAMERA>
 </AUGMENTATION>
