@@ -1,12 +1,12 @@
 <AUGMENTATION viewdisplay="false" viewlist="sorting_home,sorting_IO,sorting_info,sorting_live,live0" viewswitch="true" version="550">
     <VALUESERVER predefined="{&quot;sorting_db_HMI_Con_xHMIkey&quot;:true}">
-        <MQTT url="mqtt://public:public@public.cloud.shiftr.io" topic="mps/error" prefix="errors_" />
+        <MQTT url="mqtt://public:public@public.cloud.shiftr.io" topic="festo/ar" prefix="errors_" />
         <MQTT url="mqtt://public:public@public.cloud.shiftr.io" topic="mps/sorting" prefix="sorting_" transmitter="send_sorting"/>
     </VALUESERVER>
 
     <CAMERA x="0.5" y="0.5" distance="0.2">
-        <NODE tx="0" ty="0" sxyz="0.01">
-            <TEXT label="@anim:status" rgba="000000FF" width="60" backrgba="FFFFFFFF" />
+        <NODE tx="-1" ty="0" sxyz="0.01">
+            <TEXT label="@anim:fest/ar" rgba="000000FF" width="60" backrgba="FFFFFFFF" />
         </NODE>
     </CAMERA>
 </AUGMENTATION>
