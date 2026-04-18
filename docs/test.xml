@@ -5,7 +5,7 @@
     </VALUESERVER>
 
     <CAMERA x="0.5" y="0.5" distance="0.2">
-        <NODE tx="0" ty="0" sxyz="1.5">
+        <NODE tx="0" ty="0" sxyz="0.01">
             <TEXT label="@anim:status" rgba="000000FF" width="60" backrgba="FFFFFFFF" />
         </NODE>
     </CAMERA>
